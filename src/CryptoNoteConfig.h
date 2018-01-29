@@ -24,7 +24,8 @@ const size_t   BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW             = 60;
 //TODO Specify total number of available coins
 //TODO ((uint64_t)(-1)) equals to 18446744073709551616 coins
 //TODO or you can define number explicitly UINT64_C(858986905600000000)
-const uint64_t MONEY_SUPPLY                                  = ((uint64_t)(-1));
+//const uint64_t MONEY_SUPPLY                                  = ((uint64_t)(-1));
+const uint64_t MONEY_SUPPLY                                  = (UINT64_C(21000000));
 const unsigned EMISSION_SPEED_FACTOR                         = 21;
 static_assert(EMISSION_SPEED_FACTOR <= 8 * sizeof(uint64_t), "Bad EMISSION_SPEED_FACTOR");
 
@@ -74,7 +75,7 @@ const char     MINER_CONFIG_FILE_NAME[]                      = "miner_conf.json"
 
 //TODO Put here the name of your currency
 const char     CRYPTONOTE_NAME[]                             = "bitcoincarboncopy";
-const char     GENESIS_COINBASE_TX_HEX[]                     = "013c01ff0001ffffffffffff01029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd0880712101274fb6ac2787688efd6e2e4faf6782234cc99641397e9f4e4bcf631896c88bb9";
+const char     GENESIS_COINBASE_TX_HEX[]                     = "013c01ff00010a029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd08807121011ffaa7064c76eab12ad999d906a5e18a0343e2e9651532e983434261b8032c6d";
 
 const uint8_t  CURRENT_TRANSACTION_VERSION                   =  1;
 const uint8_t  BLOCK_MAJOR_VERSION_1                         =  1;
